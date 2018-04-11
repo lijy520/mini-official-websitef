@@ -1,0 +1,21 @@
+<import src="/common/head/head" />
+<template is="head" />
+
+ <import src="/common/template/wetoast/wetoast.wxml"/>
+ <template is="wetoast" data="{{...__wetoast__}}"/>
+
+<scroll-view class="list" scroll-y bindscrolltolower="scrolltolower" enable-back-to-top>
+    <view class="item" wx:for="{{dataArr}}" wx:key="{{index}}" bindtap='cellClick' data-index='{{index}}'>
+        <view class="item-inner">
+            <view class="dot" hidden="{{item.isReading != 0}}"></view>
+            <view class="item-name">{{item.name}}</view>
+            <view class="date">{{item.createTime}}</view>
+            <view class="icon-right-arrow"></view>
+        </view>
+    </view>
+
+    <!-- 尾部提示 -->
+      <!-- <view class="loadMoreTip">
+        <text>{{loadMoreTip}}</text>
+      </view> -->
+</scroll-view>

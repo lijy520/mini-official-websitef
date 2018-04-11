@@ -1,0 +1,8 @@
+<view class="toolbar">
+    <view class="title">{{title}}</view>
+    <view class="toolbar-actions">
+        <image class="btn-down" bindtap="handleMoveDown" src="/imgs/icon_down.png"></image>
+        <image class="btn-up" bindtap="handleMoveUp" src="/imgs/icon_up.png"></image>
+        <image class="btn-del" bindtap="handleDel" src="/imgs/icon_shanchu.png"></image>
+    </view>
+</view>

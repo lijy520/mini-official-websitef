@@ -1,0 +1,98 @@
+page {
+    background-color: #f7f7f7;
+}
+
+.info-box{
+  margin: 20rpx;
+}
+
+.header {
+    height: 170rpx;
+    padding: 48rpx 0;
+    background-color: #fff;
+}
+
+.header .logo {
+    display: block;
+    width: 150rpx;
+    height: 150rpx;
+    border-radius: 50%;
+    background-color: #ddd;
+    margin: 0 auto;
+}
+
+.header .name {
+    margin-top: 24rpx;
+    font-size: 36rpx;
+    font-weight: 600;
+    text-align: center;
+    color: #222222;
+}
+
+.list {
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 20rpx;
+    flex-direction: column;
+}
+
+.list .item {
+    position: relative;
+    height: 95rpx;
+    padding: 0 30rpx;
+}
+
+.list .item .label {
+    font-size: 28rpx;
+    color: #777777;
+    line-height: 95rpx;  
+}
+
+.list .item .value {
+    position: absolute;
+    top: 50%;
+    left: 226rpx;
+    right: 32rpx;
+    transform: translate(0, -50%);
+    font-size: 32rpx;
+    color: #222222;
+    line-height: 95rpx;
+    flex: 1;
+    text-align: right;
+    
+    /* background-color: red; */
+}
+
+.list .item .icon-right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 30rpx;
+    transform: translate(0, -50%);
+    display: inline-block;
+    width: 20rpx;
+    height: 20rpx;
+}
+
+.list .item .icon-right-arrow::before {
+    content: '';
+    display: block;
+    width: 20rpx;
+    height: 20rpx;
+    margin-left: -8rpx;
+    transform: rotate(-45deg);
+    border-right: 2rpx solid #d7d7d7;
+    border-bottom: 2rpx solid #d7d7d7;
+}
+
+.list .item .line {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.list .item .line view {
+    height: 2rpx;
+    background-color: rgba(204, 204, 204, 0.5);
+    margin: 0 30rpx;
+}

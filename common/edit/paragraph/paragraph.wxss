@@ -1,0 +1,22 @@
+.paragraph {
+    background-color: #fff;
+}
+
+.paragraph .paragraph-box {
+    padding: 10rpx 40rpx;
+}
+
+.paragraph .paragraph-box .title {
+    height: 105rpx;
+    line-height: 105rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #bdbdc3;
+}
+
+.paragraph .paragraph-box .content {
+    padding-top: 40rpx;
+    min-height: 300rpx;
+    font-size: 28rpx;
+    color: #bdbdc3;
+}

@@ -1,0 +1,55 @@
+<view class="bottom-selector">
+    <view class="level-2-wrapper paragraph" wx:if="{{selectedGroup == 1}}">
+        <view class="level-2">
+            <view class="item" data-type="2" bindtap="handleSelectItem">
+                <image src="/imgs/3.5_icon_youbiaoti_hover.png" style="width:46rpx;height:36rpx;"></image>
+            </view>
+            <view class="item" data-type="1" bindtap="handleSelectItem">
+                <image src="/imgs/3.5_icon_wubiaoti.png" style="width:46rpx;height:27rpx;"></image>
+            </view>
+        </view>
+        <view class="icon-triangle"></view>
+    </view>
+    <view class="level-2-wrapper picture" wx:if="{{selectedGroup == 2}}">
+        <view class="level-2">
+            <view class="item" data-type="21" bindtap="handleSelectItem">
+                <image src="/imgs/3.7_icon_danzhang_hover.png" style="width:38rpx;height:52rpx;"></image>
+            </view>
+            <view class="item" data-type="22" bindtap="handleSelectItem">
+                <image src="/imgs/3.7_icon_liangzhang.png" style="width:55rpx;height:32rpx;"></image>
+            </view>
+            <view class="item" data-type="23" bindtap="handleSelectItem">
+                <image src="/imgs/3.7_icon_sanzhang.png" style="width:85rpx;height:32rpx;"></image>
+            </view>
+        </view>
+        <view class="icon-triangle"></view>
+    </view>
+    <view class="level-2-wrapper product-group" wx:if="{{selectedGroup == 3}}">
+        <view class="level-2">
+            <view class="item" data-type="31" bindtap="handleSelectItem">
+                <image src="/imgs/3.6_icon_sige_hover.png" style="width:49rpx;height:50rpx;"></image>
+            </view>
+            <view class="item" data-type="32" bindtap="handleSelectItem">
+                <image src="/imgs/3.6_icon_liebiao.png" style="width:66rpx;height:37rpx;"></image>
+            </view>
+            <view class="item" data-type="33" bindtap="handleSelectItem">
+                <image src="/imgs/3.6_icon_dantu.png" style="width:49rpx;height:41rpx;"></image>
+            </view>
+        </view>
+        <view class="icon-triangle"></view>
+    </view>
+    <view class="level-1">
+        <view class="item" data-group="1" bindtap="handleSelectGroup">
+            <image class="icon" src="/imgs/3.8_icon_duanluo.png" style="width:40rpx;height:43rpx;"></image>
+            <view class="name">+段落</view>
+        </view>
+        <view class="item" data-group="2" bindtap="handleSelectGroup">
+            <image class="icon" src="/imgs/3.8_icon_tupian.png" style="width:50rpx;height:42rpx;"></image>
+            <view class="name">+图片</view>
+        </view>
+        <view class="item" data-group="3" bindtap="handleSelectGroup">
+            <image class="icon" src="/imgs/3.8_icon_shangpingzu.png" style="width:40rpx;height:47rpx;"></image>
+            <view class="name">+商品组</view>
+        </view>
+    </view>
+</view>

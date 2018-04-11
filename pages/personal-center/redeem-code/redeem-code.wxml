@@ -1,0 +1,2 @@
+<image class="bg" src="/imgs/tuan_erweima_bg.png"></image>
+<image class="qr-code" src='{{qrCode}}'></image>

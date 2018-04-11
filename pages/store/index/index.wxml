@@ -1,0 +1,132 @@
+
+<import src="/common/head/head" />
+<template is="head" />
+
+<view class="header">
+  <image class="bg" src='/imgs/3.4_tuan_bg.png'></image>
+  <image class="logo" src='{{model.logo}}'></image>
+  <view class="info">
+    <view class="name">{{model.shopName}}</view>
+    <view class="address">{{model.address}}</view>
+  </view>
+
+  <view class='phone' bindtap='phoneClick'>
+    <image src='/imgs/2.2_icon_dianhua.png'></image>
+  </view>
+</view>
+
+<!-- 商品详细信息 动态添加 -->
+
+<!-- componentType 字段判断类型
+        1   无标题段落
+        2   有标题段落
+
+        11  图片1X1
+        12  图片1X2
+        13  图片1X3
+        21  商品组图文左右混排
+        22  商品组图文组合混排
+        23  商品组图文上下混排 -->
+<block wx:for="{{model.templates[0].templateComponents}}" wx:key="{{item}}">
+  <!-- 1   无标题段落 -->
+  <view class="story" wx:if="{{item.componentType == 1}}">
+    <!-- <view class="title">{{item.components[0].title}}</view> -->
+    <text>{{item.components[0].context}}</text>
+  </view>
+
+  <!-- 2   无标题段落 -->
+  <view class="story" wx:if="{{item.componentType == 2}}">
+    <view class="title">{{item.components[0].title}}</view>
+    <text>{{item.components[0].context}}</text>
+  </view>
+
+
+
+
+  <!-- 11  图片1X1 -->
+  <view class='photo-box' wx:if="{{item.componentType == 12}}">
+    <image class="photo-11" src='{{item.components[0].picUrl}}'></image>
+  </view>
+
+  <!-- 12  图片1X2 -->
+  <view class='photo-box' wx:if="{{item.componentType == 12}}">
+    <image class="photo-12-1" src='{{item.components[0].picUrl}}'></image>
+    <image class="photo-12-2" src='{{item.components[1].picUrl}}'></image>
+  </view>
+
+  <!-- 13  图片1X3 -->
+  <view class='photo-box' wx:if="{{item.componentType == 12}}">
+    <image class="photo-13-1" src='{{item.components[0].picUrl}}'></image>
+    <image class="photo-13-2" src='{{item.components[1].picUrl}}'></image>
+    <image class="photo-13-3" src='{{item.components[1].picUrl}}'></image>
+  </view>
+
+
+
+  <!-- 21  商品组图文左右混排 -->
+  <view class="product-21" wx:if="{{item.componentType == 21}}">
+    <view class="title">
+      <view>商品列表</view>
+      <!-- <image class="icon-list" src='/imgs/3.8_iconshangpliebiao.png'></image> -->
+    </view>
+
+    <view class="list">
+      <view class="item" wx:for="{{item.components}}" wx:key="goodItem" wx:for-item="goodItem" wx:for-index="goodindex"  bindtap='goodCellClick' data-goodindex='{{goodindex}}' data-templateindex='{{index}}'>
+        <image class="pic" src='{{goodItem.turnShowPics[0]}}'></image>
+        <view class='info-view'>
+          <view class="name">{{goodItem.goodsName}}</view>
+          <view class="price">￥{{goodItem.salePrice}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+
+  <!-- 22  商品组图文组合混排 (一行两个) -->
+  <view class="product-22" wx:if="{{item.componentType == 21}}">
+    <view class="title">
+      <view>商品列表</view>
+      <!-- <image class="icon-list" src='/imgs/3.8_iconshangpliebiao.png'></image> -->
+    </view>
+
+    <view class="list">
+      <view class="item" wx:for="{{item.components}}" wx:key="{{goodItem}}" wx:for-item="goodItem">
+        <image class="pic" src='{{goodItem.turnShowPics[0]}}'></image>
+        <view class="name">{{goodItem.goodsName}}</view>
+        <view class="price">￥{{goodItem.salePrice}}</view>
+      </view>
+    </view>
+  </view>
+
+
+  <!-- 23  商品组图文上下混排 -->
+  <view class="product-23" wx:if="{{item.componentType == 21}}">
+    <view class="title">
+      <view>商品列表</view>
+      <!-- <image class="icon-list" src='/imgs/3.8_iconshangpliebiao.png'></image> -->
+    </view>
+
+    <view class="list">
+      <view class="item" wx:for="{{item.components}}" wx:key="{{goodItem}}" wx:for-item="goodItem">
+        <image class="pic" src='{{goodItem.turnShowPics[0]}}'></image>
+        <view class="name">{{goodItem.goodsName}}</view>
+        <view class="price">￥{{goodItem.salePrice}}</view>
+      </view>
+    </view>
+  </view>
+
+</block>
+
+
+<view class="actions">
+  <button class="btn-share">
+    <image class="icon" src='/imgs/2.2_icon_fenxiang.png'></image>
+    <view class="name">分享</view>
+  </button>
+  <button class="btn-edit">
+    <image class="icon" src='/imgs/2.2_icon_bianji.png'></image>
+    <view class="name">编辑</view>
+  </button>
+  <button class="btn-manage">店铺管理</button>
+</view>

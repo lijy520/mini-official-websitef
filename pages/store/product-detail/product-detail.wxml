@@ -1,0 +1,31 @@
+
+<import src="/common/head/head" />
+<template is="head" />
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class='swiper'>
+  <block wx:for="{{model.turnShowPics}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="info">
+    <view class="name">{{model.goodsName}}</view>
+    <view class="price">￥{{model.salePrice}}</view>
+    <view class="extra">
+        <view>运费：{{model.expressFee}}</view>
+        <view>库存：{{model.storeCount}}</view>
+    </view>
+</view>
+
+<view class="detail">
+    <view class="title">商品详情</view>
+</view>
+
+<view class='photo'>
+    <block wx:for="{{model.detailPics}}" wx:key="{{item}}">
+      <image  src='{{item}}'></image>
+    </block>
+</view>

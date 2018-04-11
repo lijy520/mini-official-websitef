@@ -1,0 +1,79 @@
+.bottom-selector .level-1 {
+    display: flex;
+    justify-content: space-evenly;
+    height: 130rpx;
+    background-color: #ffffff;
+}
+
+.bottom-selector .level-1 .item {
+    position: relative;
+    width: 130rpx;
+    height: 130rpx;
+}
+
+.bottom-selector .level-1 .item .icon {
+    position: absolute;
+    top: 24rpx;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.bottom-selector .level-1 .item .name {
+    margin-top: 78rpx;
+    font-size: 26rpx;
+    text-align: center;
+    color: #a0a0a0;
+}
+
+.bottom-selector .level-2-wrapper {
+    position: relative;
+    height: 90rpx;
+}
+
+.bottom-selector .level-2 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 10rpx;
+    background-color: #262626;
+    height: 71rpx;
+}
+
+.bottom-selector .paragraph .level-2 {
+    margin-left: 30rpx;
+    width: 266rpx;
+}
+
+.bottom-selector .paragraph .icon-triangle {
+    margin-left: 145rpx;
+}
+
+.bottom-selector .picture .level-2 {
+    margin: 0 auto;
+    width: 425rpx;
+}
+
+.bottom-selector .picture .icon-triangle {
+    margin: 0 auto;
+}
+
+.bottom-selector .product-group .level-2 {
+    position: absolute;
+    top: 0;
+    right: 30rpx;
+    width: 425rpx;
+}
+
+.bottom-selector .product-group .icon-triangle {
+    position: absolute;
+    bottom: 2rpx;
+    right: 145rpx;
+}
+
+.bottom-selector .icon-triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 19rpx 12.5rpx 0 12.5rpx;
+    border-color: #262626 transparent transparent transparent;
+}

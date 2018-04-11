@@ -1,0 +1,36 @@
+<view class="header">
+  <image class="bg" src="/imgs/tuan_banner_bg.png"></image>
+  <view class="title">手机在线制作店铺</view>
+  <view class="subtitle">新乐汇小程序</view>
+  <navigator class="btn-edit" url="/pages/store-management/create-store/create-store">立即编辑</navigator>
+</view>
+
+<view class="mp">
+  <view class="title">新乐汇小程序</view>
+  <view class="list">
+    <view class="item">
+      <view class="cat">小程序</view>
+      <view class="name">微名片</view>
+      <image class="icon" src="/imgs/icon_youjian.png"></image>
+    </view>
+    <view class="item">
+      <view class="cat">小程序</view>
+      <view class="name">新乐汇</view>
+      <image class="icon" src="/imgs/icon_youjian.png"></image>
+    </view>
+    <view class="item">
+      <view class="cat">小程序</view>
+      <view class="name">百宝箱</view>
+      <image class="icon" src="/imgs/icon_youjian.png"></image>
+    </view>
+  </view>
+</view>
+
+<view class="made">
+  <image class="bg" src="/imgs/tuan_guanggao_bg.png"></image>
+  <view class="title">个人定制 私人专属</view>
+  <view class="subtitle">不一样的身份体现</view>
+  <navigator class="btn-make" url="/pages/main/personal-made/personal-made">点击定制</navigator>
+</view>
+
+<navigator wx:for="{{pages}}" wx:key="{{index}}" url="/{{item.pathName}}">{{item.name}}</navigator>

@@ -1,0 +1,144 @@
+page {
+    padding-bottom: 130rpx;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95rpx;
+    padding: 0 30rpx;
+}
+
+.header .title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #111111;
+}
+
+.header .cat {
+    font-size: 28rpx;
+    text-align: right;
+    color: #8d8d8d;
+}
+
+.product-name {
+    height: 59rpx;
+    padding: 26rpx 30rpx;
+    text-align: center;
+}
+
+.pic {
+    padding: 30rpx;
+}
+
+.pic .title {
+    font-size: 28rpx;
+    color: #969690;
+    margin-bottom: 45rpx;
+}
+
+.pic .list .item {
+    width: 214rpx;
+    height: 214rpx;
+    background-color: #ddd;
+    vertical-align: top;
+    margin-bottom: 24rpx;
+}
+
+.pic .list .item:nth-child(3n + 1),
+.pic .list .item:nth-child(3n + 2) {
+    margin-right: 24rpx;
+}
+
+.pic .list .item.btn-add-pic {
+    display: inline-block;
+    border: dashed 1px #b9b9b9;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.pic .list .btn-add-pic .icon-plus {
+    margin: 63rpx auto 28rpx;
+}
+
+.pic .list .btn-add-pic .label {
+    font-size: 24rpx;
+    color: #cccccc;
+    text-align: center;
+}
+
+.field {
+    padding: 0 30rpx;
+}
+
+.field .list .item {
+    display: flex;
+    justify-content: space-between;
+    height: 95rpx;
+}
+
+.field .list .item .name {
+    padding-right: 15rpx;
+}
+
+.field .list .item .value {
+    padding-left: 15rpx;
+}
+
+.field .field-action {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28rpx;
+    color: #4487f8;
+}
+
+.action {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 130rpx;
+    border-top: solid 1rpx #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+}
+
+.action .btn-add {
+    font-size: 38rpx;
+    color: #222222;
+    padding: 0;
+}
+
+.action .btn-add::after {
+    border: none;
+}
+
+.action .btn-add .icon-add {
+    display: inline-block;
+    width: 34rpx;
+    height: 34rpx;
+    background-color: #ddd;
+    margin-right: 16rpx;
+}
+
+.action .btn-add .name {
+    display: inline-block;
+}
+
+.action .btn-finish {
+    width: 332rpx;
+    height: 90rpx;
+    border-radius: 8px;
+    background-color: #4487f8;
+    font-size: 38rpx;
+    color: #ffffff;
+    line-height: 90rpx;
+}
+
+.action .btn-finish::after {
+    border-color: #4487f8;
+}

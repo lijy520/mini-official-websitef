@@ -1,0 +1,147 @@
+page {
+    background-color: #f7f7f7;
+}
+
+.header-wrapper {
+    background-color: #fff;
+    margin-bottom: 17rpx;
+}
+
+.line {
+    height: 2rpx;
+    background-color: rgba(204, 204, 204, 0.5);
+    margin: 0 30rpx;
+}
+
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 50rpx 50rpx;
+}
+
+.header .logo {
+    width: 130rpx;
+    height: 130rpx;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+.header .info{
+  margin-left: 30rpx;
+}
+
+.header .info .name {
+    font-size: 40rpx;
+    font-weight: 600;
+    color: #383831;
+}
+
+.header .info .phone {
+    font-size: 24rpx;
+    color: #bcbcbc;
+}
+
+.header .btn-bind {
+    width: 210rpx;
+    height: 52rpx;
+    border-radius: 26rpx;
+    background-color: #4487f8;
+    font-size: 26rpx;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    line-height: 52rpx;
+    right: 30rpx;
+    position: absolute;
+    top:50%; 
+    margin-top:-26rpx; 
+}
+
+.header .btn-bound {
+    width: 107rpx;
+    height: 52rpx;
+    border-radius: 26rpx;
+    background-color: #c7c7c7;
+    font-size: 26rpx;
+    color: #ffffff;
+    padding: 0;
+    margin: 0;
+    line-height: 52rpx;
+    right: 30rpx;
+    position: absolute;
+    top:50%; 
+    margin-top:-26rpx; 
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.actions .item {
+    width: 50%;
+    height: 175rpx;
+    padding-top: 44rpx;
+    box-sizing: border-box;
+}
+
+.actions .item .icon {
+    display: block;
+    width: 44rpx;
+    height: 35rpx;
+    margin: 0 auto 19rpx;
+}
+
+.actions .item .name {
+    font-size: 30rpx;
+    text-align: center;
+    color: #000000;
+}
+
+.list .nav {
+    position: relative;
+    height: 120rpx;
+    background-color: #fff;
+    margin-bottom: 2rpx;
+}
+
+.list .nav .icon {
+    position: absolute;
+    top: 50%;
+    left: 30rpx;
+    transform: translate(0, -50%);
+    width: 42rpx;
+    height: 42rpx;
+}
+
+.list .nav .label {
+    position: absolute;
+    top: 50%;
+    left: 100rpx;
+    transform: translate(0, -50%);
+    font-size: 30rpx;
+    color: #000000;
+}
+
+.list .nav .icon-right-arrow {
+    position: absolute;
+    top: 50%;
+    right: 30rpx;
+    transform: translate(0, -50%);
+    display: inline-block;
+    width: 20rpx;
+    height: 20rpx;
+}
+
+.list .nav .icon-right-arrow::before {
+    content: '';
+    display: block;
+    width: 20rpx;
+    height: 20rpx;
+    margin-left: -8rpx;
+    transform: rotate(-45deg);
+    border-right: 2rpx solid #d7d7d7;
+    border-bottom: 2rpx solid #d7d7d7;
+}

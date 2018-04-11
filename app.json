@@ -1,0 +1,55 @@
+{
+  "pages": [
+    "pages/main/index/index",
+    "pages/personal-center/index/index",
+    "pages/personal-center/custom-made/index/index",
+    "pages/personal-center/custom-made/contact-info/contact-info",
+    "pages/personal-center/customer-message/index/index",
+    "pages/personal-center/customer-message/detail/detail",
+    "pages/personal-center/register/register",
+    "pages/personal-center/redeem-code/redeem-code",
+    "pages/personal-center/info-auth/index/index",
+    "pages/personal-center/info-auth/identity-auth/identity-auth",
+    "pages/store-management/index/index",
+    "pages/store-management/publish/publish",
+    "pages/store/index/index",
+    "pages/store/product-detail/product-detail",
+    "pages/store-management/edit/product/product",
+    "pages/main/personal-made/personal-made",
+    "pages/store-management/edit/index/index",
+    "pages/personal-center/info-auth/store-info/store-info",
+    "pages/personal-center/custom-made/customSuccess/customSuccess",
+    "pages/store-management/create-store/create-store",
+    "pages/store-management/edit/paragraph/paragraph"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "新乐汇汇客通",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#222",
+    "selectedColor": "#4487f8",
+    "list": [
+      {
+        "pagePath": "pages/main/index/index",
+        "text": "微官网",
+        "iconPath": "/imgs/icon_xinlehui.png",
+        "selectedIconPath": "/imgs/icon_xinlehui_hover.png"
+      },
+      {
+        "pagePath": "pages/store-management/index/index",
+        "text": "店铺管理",
+        "iconPath": "/imgs/icon_dianpu.png",
+        "selectedIconPath": "/imgs/icon_dianpu_hover.png"
+      },
+      {
+        "pagePath": "pages/personal-center/index/index",
+        "text": "个人中心",
+        "iconPath": "/imgs/icon_gerenzhongxin.png",
+        "selectedIconPath": "/imgs/icon_gerenzhongxin_hover.png"
+      }
+    ]
+  }
+}

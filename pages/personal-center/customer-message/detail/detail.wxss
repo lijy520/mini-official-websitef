@@ -1,0 +1,48 @@
+page {
+    box-sizing: border-box;
+    padding: 0 25rpx;
+}
+
+.detail-box{
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+  background-color: white;
+}
+
+.header {
+    position: relative;
+    padding: 32rpx 30rpx 20rpx;
+}
+
+.header .title {
+    font-size: 38rpx;
+    font-weight: 500;
+    color: #222222;
+}
+
+.header .subtitle {
+    font-size: 30rpx;
+    font-weight: 500;
+    color: #222222;
+    margin-top: 10rpx;
+}
+
+.header .date {
+    position: absolute;
+    top: 32rpx;
+    right: 30rpx;
+    font-size: 26rpx;
+    color: #bcbcbc;
+}
+
+.line {
+    margin: 0 30rpx;
+    border-top: solid 1rpx rgba(204, 204, 204, 0.5);
+}
+
+.content {
+    padding: 21rpx 30rpx 0;
+    font-size: 28rpx;
+    line-height: 1.57;
+    color: #8b8f93;
+}

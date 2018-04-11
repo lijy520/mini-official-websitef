@@ -1,0 +1,28 @@
+.title {
+    padding: 30rpx 40rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #222222;
+}
+
+.content {
+    padding: 30rpx 40rpx;
+    min-height: 300rpx;
+    font-size: 28rpx;
+    color: #8b8f93;
+}
+
+.btn-ok {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 95rpx;
+    width: 100%;
+    background-color: #4487f8;
+    border-radius: 0;
+    color: #fff;
+}
+
+.btn-ok::after {
+    border: none;
+}

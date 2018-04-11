@@ -1,0 +1,60 @@
+<import src="/common/head/head" />
+<template is="head" />
+
+
+
+<view class='info-box' wx:for="{{dataArr}}" wx:key="item">
+  <view class="header">
+    <image class="logo" src='{{item.logo}}'></image>
+    <!-- <view class="name">VICUTO品牌</view> -->
+  </view>
+
+
+
+  <view class="list">
+    <view class="item">
+      <view class="label">店铺名称</view>
+      <view class="value">{{item.shopName}}</view>
+      <view class="line">
+        <view></view>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="label">店铺地址</view>
+      <view class="value">{{item.address}}</view>
+      <view class="line">
+        <view></view>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="label">负责人</view>
+      <view class="value">{{item.head}}</view>
+      <view class="line">
+        <view></view>
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="label">联系电话</view>
+      <view class="value">{{item.mobile}}</view>
+      <view class="line">
+        <view></view>
+      </view>
+    </view>
+
+    <navigator class="item">
+      <view class="label">店铺资料</view>
+      <view class="icon-right-arrow"></view>
+      <!-- <view class="line">
+        <view></view>
+      </view> -->
+    </navigator>
+
+    <!-- <view class="item" bindtap='personalCardClick' data-index='{{index}}'>
+      <view class="label">身份认证</view>
+      <view class="icon-right-arrow"></view>
+    </view> -->
+  </view>
+</view>

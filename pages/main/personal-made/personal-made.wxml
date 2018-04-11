@@ -1,0 +1,23 @@
+<image class="banner"></image>
+
+<view class="website">www.newjoys.cn</view>
+
+<view class="intro">
+    <view class="item">
+        <image class="icon"></image>
+        <view class="content">提现快捷方便，一键生成</view>
+    </view>
+    <view class="item">
+        <image class="icon"></image>
+        <view class="content">体现微信特色，海量用户小程序带来的机遇等</view>
+    </view>
+</view>
+
+<form>
+    <view class="form">
+        <view class="title">私人申请</view>
+        <input placeholder="姓名" />
+        <input placeholder="电话" />
+        <button class="btn-submit">提交</button>
+    </view>
+</form>

@@ -1,0 +1,11 @@
+<view class="picture">
+    <toolbar title="图片" bindmovedown="handleMoveDown" bindmoveup="handleMoveUp" binddel="handleDel"></toolbar>
+    <view class="picture-box type-{{type}}">
+        <view wx:for="{{type == 1 ? [1] : type == 2 ? [1,2] : [1,2,3,4,5,6]}}" wx:key="index">
+            <image class="item" wx:if="{{list[index]}}" src="{{list[index]}}"></image>
+            <view class="uploader item" wx:else bindtap="handleUpload">
+                <view class="icon-plus"></view>
+            </view>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="header">
+    <image class="bg" src="{{shop.avatar}}"></image>
+    <image class="logo" src="{{shop.logo}}"></image>
+    <view class="info">
+        <view class="name">{{shop.shopName}}</view>
+        <view class="address">{{shop.address}}</view>
+    </view>
+</view>
+
+<view wx:for="{{list}}" wx:key="{{item.id}}">
+    <paragraph wx:if="{{item.componentType === 1 || item.componentType === 2}}" item="{{item}}" bindmovedown="handleMoveDown"
+        bindmoveup="handleMoveUp" binddel="handleDel" bindedit="handleParagraphEdit"></paragraph>
+    <picture wx:if="{{item.componentType === 11 || item.componentType === 12 || item.componentType === 13}}" item="{{item}}"
+        bindmovedown="handleMoveDown" bindmoveup="handleMoveUp" binddel="handleDel"></picture>
+    <product-group wx:if="{{item.componentType === 21 || item.componentType === 22 || item.componentType === 23}}" item="{{item}}"></product-group>
+    <view wx:if="{{index < list.length - 1}}">
+        <view class="btn-insert">+ 插入模块</view>
+        <selector></selector>
+    </view>
+</view>
+
+<bottom-selector bindadd="handleAppendComponent"></bottom-selector>
+
+<button>完成</button>

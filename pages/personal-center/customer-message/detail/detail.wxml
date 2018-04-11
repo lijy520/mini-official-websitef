@@ -1,0 +1,9 @@
+<view class='detail-box'>
+  <view class="header">
+    <view class="title">{{info.name}}</view>
+    <view class="subtitle">{{info.phone}}</view>
+    <view class="date">{{info.createTime}}</view>
+  </view>
+  <view class="line"></view>
+  <view class="content">{{info.leaveWord}}</view>
+</view>

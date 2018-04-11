@@ -1,0 +1,26 @@
+.toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95rpx;
+    padding: 0 30rpx 0 40rpx;
+    background-color: #fff;
+}
+
+.toolbar .title {
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #111111;
+}
+
+.toolbar .toolbar-actions .btn-down,
+.toolbar .toolbar-actions .btn-up,
+.toolbar .toolbar-actions .btn-del {
+    width: 34rpx;
+    height: 34rpx;
+}
+
+.toolbar .toolbar-actions .btn-up,
+.toolbar .toolbar-actions .btn-del {
+    margin-left: 59rpx;
+}

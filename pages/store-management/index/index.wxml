@@ -1,0 +1,38 @@
+<import src="/common/head/head" />
+<template is="head" />
+
+
+<view class="nothing" wx:if="{{flase}}">
+  <image class="bg" src="/imgs/icon_kongbaiye.png"></image>
+  <view class="content">您还没有小程序，点击按钮制作吧！</view>
+  <button class="btn-make">立即体验</button>
+</view>
+
+<view wx:else>
+  <view class='shop-box' wx:for="{{dataArr}}" wx:key="item" > 
+    <view class="header">
+      <image class="bg" src='/imgs/3.4_tuan_bg.png' bindtap='cellClick' data-index='{{index}}'></image>
+      <image class="logo" src='{{item.avatar}}'></image>
+      <view class="info">
+        <view class="name">{{item.shopName}}</view>
+        <view class="address">{{item.address}}</view>
+      </view>
+    </view>
+
+    <view class="actions"  bindtap='editingClick' data-index='{{index}}'>
+      <view class="action">
+        <image class="icon" src='/imgs/2.1_icon_bianji.png'></image>
+        <view class="name">编辑</view>
+      </view>
+      <view class="action" bindtap='shareClick' data-index='{{index}}'>
+        <image class="icon" src='/imgs/2.1_icon_fenxiang.png'></image>
+        <view class="name">分享</view>
+      </view>
+      
+      <view class="action" bindtap='publishClick' data-index='{{index}}'>
+        <image class="icon" src='/imgs/2.1_icon_fabu.png'></image>
+        <view class="name">发布</view>
+      </view>
+    </view>
+  </view>
+</view>

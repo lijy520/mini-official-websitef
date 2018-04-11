@@ -1,0 +1,148 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "1.9.91",
+	"appid": "wx24f6aa39254e7f29",
+	"projectname": "mini-official-website",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "个人中心",
+					"pathName": "pages/personal-center/index/index",
+					"query": ""
+				},
+				{
+					"id": 1,
+					"name": "信息认证-身份认证",
+					"pathName": "pages/personal-center/info-auth/identity-auth/identity-auth",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "定制升级",
+					"pathName": "pages/personal-center/custom-made/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "定制升级-联系方式",
+					"pathName": "pages/personal-center/custom-made/contact-info/contact-info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户留言",
+					"pathName": "pages/personal-center/customer-message/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "客户留言-详细",
+					"pathName": "pages/personal-center/customer-message/detail/detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "推广码",
+					"pathName": "pages/personal-center/redeem-code/redeem-code",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "信息认证",
+					"pathName": "pages/personal-center/info-auth/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "店铺管理",
+					"pathName": "pages/store-management/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发布",
+					"pathName": "pages/store-management/publish/publish",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "店铺",
+					"pathName": "pages/store/index/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品详情",
+					"pathName": "pages/store/product-detail/product-detail",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "商品组",
+					"pathName": "pages/store-management/edit/product/product",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "私人订制",
+					"pathName": "pages/main/personal-made/personal-made",
+					"query": ""
+				},
+				{
+					"id": 14,
+					"name": "店铺管理-编辑",
+					"pathName": "pages/store-management/edit/index/index",
+					"query": "shopId=1193"
+				},
+				{
+					"id": -1,
+					"name": "信息认证-店铺资料",
+					"pathName": "pages/personal-center/info-auth/store-info/store-info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑定",
+					"pathName": "pages/personal-center/register/register",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "绑定成功",
+					"pathName": "pages/personal-center/custom-made/customSuccess/customSuccess",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "创建店铺",
+					"pathName": "pages/store-management/create-store/create-store",
+					"query": ""
+				}
+			]
+		}
+	}
+}

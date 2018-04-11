@@ -1,0 +1,6 @@
+<form bindsubmit="handleSubmit">
+    <input class="title" name="title" placeholder="请输入标题(如基本信息)" />
+    <textarea class="content" name="content" placeholder="请输入相关信息描述"></textarea>
+
+    <button class="btn-ok" formType="submit">完成</button>
+</form>

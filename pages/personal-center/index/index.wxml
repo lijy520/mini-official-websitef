@@ -1,0 +1,47 @@
+<import src="/common/head/head" />
+<template is="head" />
+
+
+<view class="header-wrapper">
+    <view class="header">
+        <image class="logo" src='{{logo}}'></image>
+        <view class="info">
+            <view class="name">{{name}}</view>
+            <view class="phone">{{phone}}</view>
+        </view>
+
+        <button class="btn-bind" wx:if="{{!isPunitive}}" bindtap='punitiveBtnClick'>绑定新乐汇账号</button>
+        <button class="btn-bound" wx:if="{{isPunitive}}">已绑定</button>
+    </view>
+
+    <view class="line"></view>
+
+    <view class="actions">
+        <navigator class="item" url="/pages/personal-center/info-auth/index/index">
+            <image class="icon" src="/imgs/icon_xinxirenzheng.png"></image>
+            <view class="name">信息认证</view>
+        </navigator>
+        <navigator class="item" url="/pages/personal-center/customer-message/index/index">
+            <image class="icon" src="/imgs/icon_liuyan.png"></image>
+            <view class="name">客户留言</view>
+        </navigator>
+    </view>
+</view>
+
+<view class="list">
+    <navigator class="nav" url="/pages/personal-center/redeem-code/redeem-code">
+        <image class="icon" src="/imgs/icon_erweima.png"></image>
+        <view class="label">推广码</view>
+        <view class="icon-right-arrow"></view>
+    </navigator>
+    <navigator class="nav" url="/pages/personal-center/custom-made/index/index">
+        <image class="icon" src="/imgs/icon_dingzhikaifa.png"></image>
+        <view class="label">订制升级</view>
+        <view class="icon-right-arrow"></view>
+    </navigator>
+    <view class="nav" bindtap='phoneClick'>
+        <image class="icon" src="/imgs/icon_kefu.png"></image>
+        <view class="label">联系客服</view>
+        <view class="icon-right-arrow"></view>
+    </view>
+</view>

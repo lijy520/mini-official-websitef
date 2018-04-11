@@ -1,0 +1,234 @@
+.input-placeholder {
+    font-size: 32rpx;
+    color: #cccccc;
+}
+
+.logo-wrapper {
+    position: relative;
+    width: 150rpx;
+    height: 150rpx;
+    padding-top: 48rpx;
+    margin: 0 auto;
+}
+
+.logo-wrapper .logo-icon {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 48rpx;
+    width: 150rpx;
+    height: 150rpx;
+}
+
+.logo-wrapper .logo {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.logo-wrapper .logo.empty {
+    background-color: #4487f8;
+}
+
+.logo-wrapper .logo.empty .camera-icon {
+    box-sizing: border-box;
+    width: 55rpx;
+    height: 46rpx;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    border: 4rpx solid;
+    border-radius: 4rpx;
+}
+
+.logo-wrapper .logo.empty .camera-icon::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    height: 48%;
+    border: 4rpx solid;
+    border-radius: 50%;
+}
+
+.logo-wrapper .logo.empty .camera-icon::after {
+    content: "";
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    border: 2rpx solid;
+}
+
+.logo-wrapper .logo.empty.small {
+    position: absolute;
+    bottom: -6rpx;
+    right: -3rpx;
+    width: 46rpx;
+    height: 46rpx;
+}
+
+.logo-wrapper .logo.empty.small .camera-icon {
+    width: 24rpx;
+    height: 20rpx;
+    border-width: 2rpx;
+}
+
+.logo-wrapper .logo.empty.small .camera-icon::before,
+.logo-wrapper .logo.empty.small .camera-icon::after {
+    border-width: 2rpx;
+}
+
+.shop-name {
+    height: 50rpx;
+    padding: 0 130rpx;
+    margin-top: 24rpx;
+    margin-bottom: 67rpx;
+    font-size: 36rpx;
+    font-weight: 600;
+    text-align: center;
+    color: #222222;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.form {
+    box-sizing: border-box;
+    padding: 0 30rpx;
+}
+
+.form .form-item {
+    height: 95rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form .form-item.shop-address-item,
+.form .form-item.phone-item {
+    border-bottom: 1rpx solid rgba(204, 204, 204, 0.5);
+}
+
+.form .form-item .label {
+    width: 196rpx;
+    height: 95rpx;
+    line-height: 96rpx;
+    font-size: 28rpx;
+    color: #777777;
+}
+
+.form .form-item input {
+    flex-grow: 1;
+    font-size: 32rpx;
+    color: #222222;
+}
+
+.form .form-item .code-input-wrapper {
+    flex-grow: 1;
+}
+
+.form .form-item .code-input-wrapper .code-input {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .form-item .code-input-wrapper .code-input .get-code-btn {
+    width: 100rpx;
+    color: #008dff;
+    font-size: 32rpx;
+    line-height: 56rpx;
+}
+
+.form .form-item .code-input-wrapper .code-input .get-code-btn.count-down {
+    color: #9aa2a7;
+}
+
+.form .form-item.image-item {
+    display: block;
+    height: auto;
+    border-bottom: 0;
+}
+
+.form .form-item.image-item .image-item-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper {
+    width: 320rpx;
+    height: 240rpx;
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper .image-uploader {
+    width: 100%;
+    height: 100%;
+    border: 1rpx dashed #b9b9b9;
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper .image-uploader .plus-icon {
+    margin: 70rpx auto 0;
+    position: relative;
+    width: 44rpx;
+    height: 44rpx;
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper .image-uploader .plus-icon::before,
+.form .form-item.image-item .image-item-content .image-wrapper .image-uploader .plus-icon::after {
+    position: absolute;
+    background-color: #ccc;
+    content: "";
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper .image-uploader .plus-icon::before {
+    width: 44rpx;
+    height: 10rpx;
+    top: 17rpx;
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper .image-uploader .plus-icon::after {
+    width: 10rpx;
+    height: 44rpx;
+    left: 17rpx;
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper .image-uploader .desc {
+    margin-top: 34rpx;
+    font-size: 26rpx;
+    color: #cccccc;
+    text-align: center;
+}
+
+.form .form-item.image-item .image-item-content .image-wrapper image {
+    width: 100%;
+    height: 100%;
+}
+
+.form .notice {
+    font-size: 24rpx;
+    color: #bcbcbc;
+    margin-top: 54rpx;
+    padding-bottom: 158rpx;
+}
+
+.action .confirm-btn {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 92rpx;
+    background-color: #4487f8;
+    border-radius: 0;
+    font-size: 36rpx;
+    color: #ffffff;
+}
+
+.action .confirm-btn::after {
+    border: none;
+}

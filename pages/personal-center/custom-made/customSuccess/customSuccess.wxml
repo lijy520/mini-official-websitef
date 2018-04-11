@@ -1,0 +1,9 @@
+<!--pages/personal-center/custom-made/customSuccess/customSuccess.wxml-->
+<import src="/common/head/head" />
+<template is="head" />
+
+<view class='success-box'>
+  <image src='/imgs/1.8_tuan_tijiaochengg.png'></image>
+  <text class='title'>提交成功！</text>
+  <text class='info'>我们会安排您的专属顾问联系您\n请耐心等待</text>
+</view>

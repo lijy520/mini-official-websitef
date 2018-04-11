@@ -1,0 +1,46 @@
+<view class="selector">
+    <view class="level-2" wx:if="{{selectedGroup == 1}}">
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_youbiaoti.png" style="width:87rpx;height:66rpx"></image>
+        </view>
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_wubiaoti.png" style="width:87rpx;height:50rpx"></image>
+        </view>
+    </view>
+    <view class="level-2" wx:if="{{selectedGroup == 2}}">
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_01.png" style="width:60rpx;height:81rpx;"></image>
+        </view>
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_02.png" style="width:87rpx;height:50rpx;"></image>
+        </view>
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_03.png" style="width:133rpx;height:50rpx;"></image>
+        </view>
+    </view>
+    <view class="level-2" wx:if="{{selectedGroup == 3}}">
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_sige.png" style="width:76rpx;height:82rpx;"></image>
+        </view>
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_liebiao.png" style="width:93rpx;height:54rpx;"></image>
+        </view>
+        <view class="item" bindtap="handleSelectItem">
+            <image src="/imgs/icon_datu.png" style="width:67rpx;height:54rpx;"></image>
+        </view>
+    </view>
+    <view class="level-1">
+        <view class="item {{selectedGroup == 1 ? 'active' : ''}}" data-group="1" bindtap="handleSelectGroup">
+            <image class="icon" src="/imgs/icon_duanluo{{selectedGroup == 1 ? '_active' : ''}}.png"></image>
+            <view class="name">段落</view>
+        </view>
+        <view class="item {{selectedGroup == 2 ? 'active' : ''}}" data-group="2" bindtap="handleSelectGroup">
+            <image class="icon" src="/imgs/icon_tupian{{selectedGroup == 2 ? '_active' : ''}}.png"></image>
+            <view class="name">图片</view>
+        </view>
+        <view class="item {{selectedGroup == 3 ? 'active' : ''}}" data-group="3" bindtap="handleSelectGroup">
+            <image class="icon" src="/imgs/icon_shangpzu{{selectedGroup == 3 ? '_active' : ''}}.png"></image>
+            <view class="name">商品组</view>
+        </view>
+    </view>
+</view>

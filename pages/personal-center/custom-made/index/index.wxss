@@ -1,0 +1,140 @@
+page {
+  background-color: #f7f7f7;
+  padding-bottom: 120rpx;
+}
+
+.box {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+.box .title {
+  height: 95rpx;
+  font-size: 32rpx;
+  font-weight: 600;
+  color: #222;
+  line-height: 95rpx;
+  padding-left: 30rpx;
+}
+
+.box .list {
+  padding: 0 28rpx 8rpx;
+  margin-bottom: 20rpx;
+}
+
+.box .list .item {
+  position: relative;
+  display: inline-block;
+  width: 216rpx;
+  height: 72rpx;
+  margin-bottom: 16rpx;
+  border-radius: 2rpx;
+  background-color: #f9f8f8;
+  font-size: 28rpx;
+  text-align: center;
+  color: #777;
+  line-height: 72rpx;
+}
+
+.box .list .item:nth-child(3n + 2), .box .list .item:nth-child(3n + 3) {
+  margin-left: 23rpx;
+}
+
+.box .list .item.active {
+  background-color: #eaf1ff;
+  color: #4487f8;
+}
+
+.box .list .item .icon-check {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25rpx;
+  height: 25rpx;
+  background-image: linear-gradient(45deg, #4487f8 0%, transparent 0),
+                      linear-gradient(45deg, transparent 50%, #4487f8 0);
+}
+
+.box .list .item .icon-check::after {
+  position: absolute;
+  top: -1rpx;
+  right: 1rpx;
+  display: inline-block;
+  line-height: 24rpx;
+  content: '✓';
+  font-size: 12rpx;
+  color: #fff;
+}
+
+.box .list .item.active .icon-check {
+  display: block;
+}
+
+.box textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 218rpx;
+  padding: 24rpx 45rpx;
+}
+
+.placeholder {
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.remark view {
+  padding-left: 30rpx;
+  font-size: 24rpx;
+  color: #bcbcbc;
+}
+
+.phone-view {
+  display: flex;
+  width: 370rpx;
+  height: 70rpx;
+  font-size: 28rpx;
+  color: #4487f8;
+  margin: 26rpx 0 0 30rpx;
+  border-color: #4487f8;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 1rpx solid #4487f8;
+}
+
+.phone-view image {
+  margin-left: 50rpx; 
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.btn-contact {
+  margin-left: 15rpx; 
+  flex: 1;
+  font-size: 28rpx;
+  color: #4487f8;
+}
+
+.btn-next {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4487f8;
+  font-size: 36rpx;
+  color: #fff;
+  border-radius: 0;
+}
+
+.line {
+  width: 100%;
+}
+
+.line view {
+  height: 2rpx;
+  background-color: rgba(204, 204, 204, 0.5);
+  margin: 0 30rpx;
+}

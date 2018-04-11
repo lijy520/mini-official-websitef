@@ -1,0 +1,86 @@
+.list {
+    height: 100%;
+}
+
+.list .item {
+    padding: 0 30rpx;
+    background-color: white;
+}
+
+.list .item .item-inner {
+    position: relative;
+    height: 110rpx;
+    background-color: white;
+}
+
+.list .item .dot,
+.list .item .item-name,
+.list .item .date,
+.list .item .icon-right-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.list .item .dot {
+    left: 0;
+    width: 14rpx;
+    height: 14rpx;
+    background-color: #4487f8;
+    border-radius: 50%;
+}
+
+.list .item .item-name {
+    left: 34rpx;
+    font-size: 32rpx;
+    font-weight: 500;
+    color: #222222;
+}
+
+.list .item .date {
+    right: 42rpx;
+    font-size: 26rpx;
+    color: #bcbcbc;
+}
+
+.list .item .icon-right-arrow {
+    right: 0;
+    display: inline-block;
+    width: 20rpx;
+    height: 20rpx;
+}
+
+.list .item .icon-right-arrow::before {
+    content: "";
+    display: block;
+    width: 20rpx;
+    height: 20rpx;
+    margin-left: -8rpx;
+    transform: rotate(-45deg);
+    border-right: 2rpx solid #d7d7d7;
+    border-bottom: 2rpx solid #d7d7d7;
+}
+
+.list .loading {
+    font-size: 26rpx;
+    color: #bcbcbc;
+    text-align: center;
+    height: 150rpx;
+}
+
+.loadMoreTip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50rpx;
+  width: 100%;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.loadMoreTip text {
+  width: 100%;
+  font-size: 30rpx;
+  text-align: center;
+  color: #808080;
+}

@@ -1,0 +1,63 @@
+<view class="logo-wrapper">
+    <image data-type="logo" bindtap="handleUpload" class="logo" hidden="{{!logo}}" src="{{logo}}"></image>
+    <image data-type="logo" bindtap="handleUpload" src="/imgs/icon_logo_default.png" hidden="{{logo}}" class="logo-icon"></image>
+    <view data-type="logo" bindtap="handleUpload" class="logo empty {{logo ? 'small' : ''}}">
+        <view class="camera-icon" hidden="{{!logo}}"></view>
+    </view>
+</view>
+
+<view class="shop-name">{{shopName}}</view>
+
+<view class="form">
+    <form bindsubmit="handleFormSubmit">
+        <view class="form-item">
+            <view class="label">店铺名称</view>
+            <input name="shopName" value="{{initData.shopName}}" placeholder="请填写" placeholder-class="input-placeholder" confirm-type="next"
+                focus="{{fcShopName}}" data-type="shopName" bindinput="handleInput" bindblur="handleInputBlur('shopName')" bindconfirm="handleInputConfirm('shopName')"
+            />
+        </view>
+        <view class="form-item shop-address-item">
+            <view class="label">店铺地址</view>
+            <input name="shopAddress" value="{{initData.shopAddress}}" placeholder="请填写" placeholder-class="input-placeholder" confirm-type="next"
+                focus="{{fcShopAddress}}" data-type="shopAddress" bindinput="handleInput" bindblur="handleInputBlur('shopAddress')" bindconfirm="handleInputConfirm('shopAddress')"
+            />
+        </view>
+        <view class="form-item">
+            <view class="label">负责人</view>
+            <input name="shopPrincipal" value="{{initData.shopPrincipal}}" placeholder="法人或对接人姓名" placeholder-class="input-placeholder"
+                confirm-type="next" focus="{{fcShopPrincipal}}" data-type="shopPrincipal" bindinput="handleInput" bindblur="handleInputBlur('shopPrincipal')"
+                bindconfirm="handleInputConfirm('shopPrincipal')" />
+        </view>
+        <view class="form-item phone-item">
+            <view class="label">联系电话</view>
+            <input name="phone" value="{{initData.phone}}" placeholder="请填写" placeholder-class="input-placeholder" maxlength="11" type="number"
+                confirm-type="next" focus="{{fcPhone}}" data-type="phone" bindinput="handleInput" bindblur="handleInputBlur('phone')" bindconfirm="handleInputConfirm('phone')"
+            />
+        </view>
+        <view class="form-item image-item">
+            <view class="label">图片上传</view>
+            <view class="image-item-content">
+                <view class="image-wrapper">
+                    <view hidden="{{license}}" class="image-uploader" data-type="license" bindtap="handleUpload">
+                        <view class="plus-icon"></view>
+                        <view class="desc">营业执照</view>
+                    </view>
+                    <image hidden="{{!license}}" src="{{license}}" data-type="license" bindtap="handleUpload"></image>
+                </view>
+                <view class="image-wrapper">
+                    <view hidden="{{avatar}}" class="image-uploader" data-type="avatar" bindtap="handleUpload">
+                        <view class="plus-icon"></view>
+                        <view class="desc">门头照</view>
+                    </view>
+                    <image hidden="{{!avatar}}" src="{{avatar}}" data-type="avatar" bindtap="handleUpload"></image>
+                </view>
+            </view>
+        </view>
+
+        <view class="notice">请保证资料的真实性，并对资料和店铺商品负责</view>
+
+        <view class="action">
+            <button class="confirm-btn" form-type="submit">下一步</button>
+        </view>
+    </form>
+</view>

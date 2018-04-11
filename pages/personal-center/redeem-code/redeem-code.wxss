@@ -1,0 +1,18 @@
+.bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 750rpx;
+    height: 1207rpx;
+}
+
+.qr-code {
+    position: absolute;
+    top: 212rpx;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 520rpx;
+    height: 520rpx;
+    background-color: #ddd;
+}

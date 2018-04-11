@@ -1,0 +1,9 @@
+{
+    "usingComponents": {
+        "paragraph": "/common/edit/paragraph/paragraph",
+        "picture": "/common/edit/picture/picture",
+        "product-group": "/common/edit/product-group/product-group",
+        "selector": "/common/edit/selector/selector",
+        "bottom-selector": "/common/edit/bottom-selector/bottom-selector"
+    }
+}

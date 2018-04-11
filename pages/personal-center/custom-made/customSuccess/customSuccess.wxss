@@ -1,0 +1,32 @@
+/* pages/personal-center/custom-made/customSuccess/customSuccess.wxss */
+
+page{
+  background-color: white;
+}
+
+.success-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150rpx;
+}
+
+.success-box image {
+  width: 300rpx;
+  height: 300rpx;
+}
+
+.success-box .title {
+  margin-top: 30rpx;
+  font-size: 50rpx;
+  color: #7a86a0;
+  font-weight: 600;
+}
+
+.success-box .info {
+  margin-top: 20rpx;
+  font-size: 36rpx;
+  text-align: center;
+  color: #7a86a0;
+}

@@ -1,0 +1,111 @@
+page {
+    background-color: #f7f7f7;
+}
+
+.nothing {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-top: 565rpx;
+    background-color: #fff;
+}
+
+.nothing .bg {
+    position: absolute;
+    top: 251rpx;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 315rpx;
+    height: 278rpx;
+}
+
+.nothing .content {
+    font-size: 36rpx;
+    text-align: center;
+    color: #7a86a0;
+}
+
+.nothing .btn-make {
+    width: 650rpx;
+    height: 88rpx;
+    margin-top: 138rpx;
+    border-radius: 4rpx;
+    background-color: #4487f8;
+    font-size: 36rpx;
+    color: #ffffff;
+}
+
+
+
+.shop-box{
+  margin-top: 20rpx;
+}
+
+.header {
+    position: relative;
+    height: 240rpx;
+}
+
+.header .bg {
+    width: 100%;
+    height: 100%;
+    background-color: #ddd;
+}
+
+.header .logo {
+    position: absolute;
+    top: 60rpx;
+    left: 27rpx;
+    width: 120rpx;
+    height: 120rpx;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.header .info {
+    position: absolute;
+    top: 73rpx;
+    left: 171rpx;
+}
+
+.header .info .name {
+    font-size: 36rpx;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.header .info .address {
+    margin-top: 13rpx;
+    font-size: 24rpx;
+    color: #ffffff;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.actions .action {
+    width: 33%;
+    height: 132rpx;
+    padding-top: 30rpx;
+    box-sizing: border-box;
+}
+
+.actions .action .icon {
+    display: block;
+    width: 40rpx;
+    height: 40rpx;
+    margin: 0 auto;
+}
+
+.actions .action .name {
+    margin-top: 8rpx;
+    font-size: 22rpx;
+    text-align: center;
+    color: #a0a0a0;
+}

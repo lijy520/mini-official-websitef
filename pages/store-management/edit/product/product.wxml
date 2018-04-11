@@ -1,0 +1,54 @@
+<view class="header">
+    <view class="title">商品列表</view>
+    <view class="cat">分类></view>
+</view>
+
+<view class="container">
+    <input class="product-name" placeholder="请输入商品名称" />
+
+    <view class="slide-pic pic">
+        <view class="title">添加商品轮播图 750*750</view>
+        <view class="list">
+            <image class="item"></image>
+            <image class="item"></image>
+            <image class="item"></image>
+            <view class="item btn-add-pic">
+                <view class="icon-plus"></view>
+                <view class="label">750*750</view>
+            </view>
+        </view>
+    </view>
+
+    <view class="field">
+        <view class="list">
+            <view class="item">
+                <input class="name" placeholder="如：零售价" />
+                <input class="value" placeholder="如：12" />
+            </view>
+        </view>
+
+        <view class="field-action">
+            <view class="btn-add">再增加一行</view>
+            <view class="btn-del">删除</view>
+        </view>
+    </view>
+
+    <view class="detail-pic pic">
+        <view class="title">添加商品详情图 750*750</view>
+        <view class="list">
+            <image class="item"></image>
+            <view class="item btn-add-pic">
+                <view class="icon-plus"></view>
+                <view class="label">750*750</view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="action">
+    <button class="btn-add">
+        <image class="icon-add"></image>
+        <view class="name">添加下一个商品</view>
+    </button>
+    <button class="btn-finish">完成</button>
+</view>

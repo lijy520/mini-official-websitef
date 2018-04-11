@@ -1,0 +1,49 @@
+
+<import src="/common/head/head" />
+<template is="head" />
+
+ <import src="/common/template/wetoast/wetoast.wxml"/>
+ <template is="wetoast" data="{{...__wetoast__}}"/>
+
+
+<view class="header">
+    <!-- <image class="bg"></image> -->
+    <view class="title">基础班</view>
+    <view class="price">
+        <view>{{price}}</view>
+        <view>元</view>
+    </view>
+    <button class="btn-buy" wx:if="{{status == 1}}" bindtap='buyClick' disabled='{{disabled}}'>立即购买</button>
+    <button class="btn-buy" wx:else>已购买</button>
+</view>
+
+<view class="detail">
+    <view class="item">
+        <view>店铺信息管理</view>
+        <view>✓</view>
+    </view>
+    <view class="item">
+        <view>店铺信息介绍</view>
+        <view>✓</view>
+    </view>
+    <view class="item">
+        <view>多图展示</view>
+        <view>✓</view>
+    </view>
+    <view class="item">
+        <view>商品编辑展示</view>
+        <view>30个</view>
+    </view>
+    <view class="item">
+        <view>分享功能</view>
+        <view>✓</view>
+    </view>
+    <view class="item">
+        <view>电话转接</view>
+        <view>✓</view>
+    </view>
+    <view class="item">
+        <view>多个小程序关联</view>
+        <view>✓</view>
+    </view>
+</view>

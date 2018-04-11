@@ -1,0 +1,7 @@
+<view class="paragraph">
+    <toolbar title="段落" bindmovedown="handleMoveDown" bindmoveup="handleMoveUp" binddel="handleDel"></toolbar>
+    <view class="paragraph-box">
+        <view class="title" wx:if="{{item.componentType === 2}}" bindtap="handleTap">{{item.components[0].title || '请输入标题（如基本信息）'}}</view>
+        <view class="content" bindtap="handleTap">{{item.components[0].context || '请输入相关信息描述'}}</view>
+    </view>
+</view>

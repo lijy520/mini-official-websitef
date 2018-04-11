@@ -1,0 +1,62 @@
+.box{
+  background-color: white;
+}
+
+page{
+  background-color: white;
+}
+
+.box .title {
+    height: 95rpx;
+    padding: 0 30rpx;
+    font-size: 32rpx;
+    font-weight: 600;
+    color: #222222;
+    line-height: 95rpx;
+}
+
+.box .field {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 95rpx;
+    padding: 0 30rpx;
+    border-bottom: solid 1rpx rgba(218, 218, 218, 0.5);
+}
+
+.box .field .label {
+    font-size: 28rpx;
+    color: #777777;
+    width: 150rpx;
+}
+
+.box .field input {
+    flex-grow: 0.5;
+    flex: 1;
+}
+
+.placeholder {
+    font-size: 32rpx;
+    color: #cccccc;
+}
+
+.btn-submit {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #4487f8;
+    font-size: 36rpx;
+    color: #ffffff;
+    border-radius: 0;
+}
+
+.line {
+  width: 100%;
+}
+
+.line view {
+  height: 2rpx;
+  background-color: rgba(204, 204, 204, 0.5);
+  margin: 0 30rpx;
+}
